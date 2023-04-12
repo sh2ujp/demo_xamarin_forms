@@ -102,14 +102,16 @@
         <ShellContent Route="Md5Tp1Page" ContentTemplate="{DataTemplate local:Md5Tp1Page}" />
     </FlyoutItem>
 
-    <FlyoutItem Title="module 6 : demo 1 - Vérification des saisies du formulaire"
-                Icon="feed.png">
-        <ShellContent Route="Md6Dm1Page"
-                      ContentTemplate="{DataTemplate local:Md6Dm1Page}" />
+    <FlyoutItem Title="module 6 : demo 1 - Vérification des saisies du formulaire" Icon="feed.png">
+        <ShellContent Route="Md6Dm1Page" ContentTemplate="{DataTemplate local:Md6Dm1Page}" />
     </FlyoutItem>
 
     <FlyoutItem Title="module 6 : tp 1 - Fake Tweeter (partie 3) - connexion de l'utilisateur" Icon="feed.png">
         <ShellContent Route="Md6Tp1Page" ContentTemplate="{DataTemplate local:Md6Tp1Page}" />
+    </FlyoutItem>
+    
+    <FlyoutItem Title="module 7 : demo 1 - Service natif de synthèse vocale" Icon="feed.png">
+        <ShellContent Route="Md7Dm1Page" ContentTemplate="{DataTemplate local:Md7Dm1Page}" />
     </FlyoutItem>
 
     <!--

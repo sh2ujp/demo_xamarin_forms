@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="app.Views.Md7Dm1Page">
+    
+    <!--module 7 - demo 1-->
+    <ContentPage.Content>
+
+        <StackLayout Orientation="Vertical">
+
+            <Entry x:Name="message"
+                   HorizontalOptions="FillAndExpand" />
+
+            <Button Text="Lire le message"
+                    HorizontalOptions="FillAndExpand"
+                    Clicked="SpeakBtn_Clicked" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
