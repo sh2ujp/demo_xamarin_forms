@@ -42,6 +42,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Views\Md7Tp1Page.xaml.cs">
+      <DependentUpon>Md7Tp1Page.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\Md6Tp1Page.xaml.cs">
       <DependentUpon>Md6Tp1Page.xaml</DependentUpon>
     </Compile>

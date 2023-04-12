@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="app.Views.Md7Tp1Page">
+    
+    <!--module 6 tp 1-->
+    <ContentPage.Content>
+
+        <StackLayout Orientation="Vertical">
+
+            <!--Top Menu-->
+            <StackLayout x:Name="topMenu"
+                         Orientation="Horizontal"
+                         BackgroundColor="#58b0f0"
+                         Padding="25,10,0,0">
+
+                <ImageButton Source="pencil.png"
+                             WidthRequest="25"
+                             Aspect="AspectFit"
+                             BackgroundColor="Transparent"
+                             HorizontalOptions="StartAndExpand" />
+
+                <Label Text="Accueil"
+                       TextColor="White"
+                       FontSize="Large"
+                       FontAttributes="Bold"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand" />
+
+                <ImageButton Source="search2.png"
+                             WidthRequest="25"
+                             Aspect="AspectFit"
+                             BackgroundColor="Transparent"
+                             HorizontalOptions="CenterAndExpand" />
+
+            </StackLayout>
+        
+            <!--formulaire connection-->
+            <StackLayout x:Name="connectionForm"
+                Orientation="Vertical">
+
+                <Label Text="Connexion"
+                       TextColor="LightGray"
+                       FontSize="Large"
+                       FontAttributes="Bold"
+                       HorizontalOptions="FillAndExpand"
+                       HorizontalTextAlignment="Center" />
+
+                <Entry x:Name="formLogin"
+                       Placeholder="Identifiant Twitter"
+                       PlaceholderColor="Bisque"
+                       HorizontalOptions="FillAndExpand"
+                       Keyboard="Email" />
+
+                <Entry x:Name="formPassword"
+                       Placeholder="Mot de passe"
+                       PlaceholderColor="Bisque"
+                       HorizontalOptions="FillAndExpand"
+                       IsPassword="True" />
+
+                <!--coche "Remember me"-->
+                <StackLayout Orientation="Horizontal">
+                    <Switch x:Name="formRememberMe" />
+                    <Label Text="Mémoriser mes informations"
+                           TextColor="LightGray"
+                           VerticalOptions="CenterAndExpand" />
+                </StackLayout>
+
+                <!--affichage des messages d'erreur-->
+                <Label x:Name="errorMessage"
+                       IsVisible="False"
+                       TextColor="Red"
+                       HorizontalOptions="FillAndExpand" />
+
+                <Button Text="Se connecter"
+                        Clicked="ConnectionBtn_Clicked"
+                        HorizontalOptions="FillAndExpand" />
+
+            </StackLayout>
+
+            <!--Tweet List-->
+            <ScrollView x:Name="tweetList">
+                <StackLayout Orientation="Vertical">
+
+                    <!--Tweet Card-->
+                    <StackLayout Orientation="Vertical">
+                        <!--Tweet Content-->
+                        <StackLayout Orientation="Horizontal"
+                                     Padding="0,0,12,0">
+
+                            <!--photo-->
+                            <Image Source="https://picsum.photos/50/75/?random"
+                                   WidthRequest="75"
+                                   Aspect="AspectFit" />
+
+                            <StackLayout Orientation="Vertical">
+
+                                <StackLayout Orientation="Horizontal"
+                                             Padding="0,15,0,0">
+                                    <Label Text="Cedric"
+                                           HorizontalOptions="Start" />
+
+                                    <Label Text="@cedricmillauriaux"
+                                           HorizontalOptions="StartAndExpand" />
+
+                                    <Label Text="50s"
+                                           TextColor="LightGray"
+                                           HorizontalOptions="EndAndExpand" />
+
+                                </StackLayout>
+
+                                <Label Text="Lore oiiez feieoz jfoi eofj oejzfi heihvhslvjlsjfij eljlisjljrl gliejlej flijslifj lqjliejf lijmoK EMOKCMOEKMIQ JM QJSKRGMJ."
+                                       HorizontalOptions="CenterAndExpand"
+                                       VerticalOptions="CenterAndExpand" />
+                            </StackLayout>
+                        </StackLayout>
+
+                        <!--Action Buttons-->
+                        <StackLayout Orientation="Horizontal">
+
+                            <ImageButton Source="repondre.png"
+                                         WidthRequest="25"
+                                         HorizontalOptions="CenterAndExpand" />
+
+                            <ImageButton Source="retweet.png"
+                                         WidthRequest="25"
+                                         HorizontalOptions="CenterAndExpand" />
+
+                            <ImageButton Source="favoris.png"
+                                         WidthRequest="25"
+                                         HorizontalOptions="CenterAndExpand" />
+
+                        </StackLayout>
+
+                        <!--Separation line-->
+                        <Label HeightRequest="1"
+                               BackgroundColor="LightGray" />
+
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+
+            <!--Footer Menu-->
+            <StackLayout x:Name="footerMenu"
+                         Orientation="Horizontal"
+                         HeightRequest="75"
+                         VerticalOptions="EndAndExpand">
+                <Label Text="Fil"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand" />
+
+                <Label Text="Notifications"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand" />
+
+                <Label Text="Messages"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand" />
+
+                <Label Text="Moi"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand" />
+
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
