@@ -82,16 +82,24 @@
         <ShellContent Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
     </FlyoutItem>
     
-    <FlyoutItem Title="module 4 : demo 1" Icon="feed.png">
+    <FlyoutItem Title="module 4 : demo 1 - Stack Layout" Icon="feed.png">
         <ShellContent Route="Md4Dm1Page" ContentTemplate="{DataTemplate local:Md4Dm1Page}" />
     </FlyoutItem>
     
-    <FlyoutItem Title="module 4 : demo 2" Icon="feed.png">
+    <FlyoutItem Title="module 4 : demo 2 - Grid Layout" Icon="feed.png">
         <ShellContent Route="Md4Dm2Page" ContentTemplate="{DataTemplate local:Md4Dm2Page}" />
     </FlyoutItem>
     
-    <FlyoutItem Title="module 4 : tp 1" Icon="feed.png">
+    <FlyoutItem Title="module 4 : tp 1 - Fake Tweeter (partie 1) - Vue" Icon="feed.png">
         <ShellContent Route="Md4Tp1Page" ContentTemplate="{DataTemplate local:Md4Tp1Page}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="module 5 : demo 1 - Formulaire de connexion" Icon="feed.png">
+        <ShellContent Route="Md5Dm1Page" ContentTemplate="{DataTemplate local:Md5Dm1Page}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="module 5 : tp 1 - Fake Tweeter (partie 2) - Formulaire et Images" Icon="feed.png">
+        <ShellContent Route="Md5Tp1Page" ContentTemplate="{DataTemplate local:Md5Tp1Page}" />
     </FlyoutItem>
 
     <!--
@@ -101,9 +109,9 @@
         content you can do so by calling 
         await Shell.Current.GoToAsync("//LoginPage");
     -->
-    <TabBar>
+    <!--<TabBar>
         <ShellContent Route="LoginPage" ContentTemplate="{DataTemplate local:LoginPage}" />
-    </TabBar>
+    </TabBar>-->
 
     <!-- Optional Templates 
     // These may be provided inline as below or as separate classes.

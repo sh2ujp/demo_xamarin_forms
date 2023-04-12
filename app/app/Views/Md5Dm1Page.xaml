@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="app.Views.Md5Dm1Page"
+             BackgroundColor="White">
+
+    <!--module 5 demo 1 -->
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Label 
+                Text="Connexion" 
+                TextColor="LightGray"
+                FontSize="Large"
+                FontAttributes="Bold"
+                HorizontalOptions="FillAndExpand"
+                HorizontalTextAlignment="Center" />
+
+            <Label 
+                Text="Pour de connecter à l'application, vous de vez vous inscrire et vous identifier avec... bla... blaaaaa... Le but étant que ce texte soit suffisement long pour dépasser la taille de l'écran et pouvoir tester la stratégie de saut de ligne."
+                TextColor="Gray" 
+                LineBreakMode="WordWrap"
+                HorizontalTextAlignment="Center"
+            />
+
+            <Entry
+                Placeholder="Votre email"    
+                PlaceholderColor="Bisque"
+                HorizontalOptions="FillAndExpand"
+                Keyboard="Email"
+            />
+
+            <Entry
+                Placeholder="Votre mot de passe"
+                PlaceholderColor="Bisque"
+                HorizontalOptions="FillAndExpand"
+                IsPassword="True"
+            />
+
+            <Entry
+                Placeholder="Votre code postal"
+                PlaceholderColor="Bisque"
+                HorizontalOptions="FillAndExpand"
+                MaxLength="5"
+                Keyboard="Numeric"
+            />
+
+
+            <StackLayout Orientation="Horizontal">
+                <Label
+                    Text="Date de naissance"
+                    TextColor="LightGray"
+                    VerticalOptions="CenterAndExpand"
+                />
+                <DatePicker />
+            </StackLayout>
+
+            
+            <StackLayout Orientation="Horizontal">
+                <Switch />
+                <Label
+                    Text="Se souvenir de moi"
+                    TextColor="LightGray"
+                    VerticalOptions="CenterAndExpand"
+                />
+            </StackLayout>
+
+
+            <Button
+                Text="Se connecter"
+                HorizontalOptions="FillAndExpand"
+            />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
