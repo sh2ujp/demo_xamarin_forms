@@ -17,6 +17,7 @@ namespace app.Views
         public Md4Tp1Page()
         {
             InitializeComponent();
+            Title = "tp: réaliser une vue simple";
         }
     }
 }

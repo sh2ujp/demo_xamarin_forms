@@ -15,6 +15,7 @@ namespace app.Views
 		public Md4Dm1Page ()
 		{
 			InitializeComponent ();
+			Title = "demo: Stack Layout";
 		}
 	}
 }

@@ -10,12 +10,12 @@ using Xamarin.Forms.Xaml;
 namespace app.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Md4Dm2Page : ContentPage
+	public partial class Md5Dm1Page : ContentPage
 	{
-		public Md4Dm2Page ()
+		public Md5Dm1Page ()
 		{
 			InitializeComponent ();
-			Title = "demo: Grid Layout";
-		}
+            Title = "demo: formulaire";
+        }
 	}
 }

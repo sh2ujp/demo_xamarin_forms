@@ -15,6 +15,7 @@ namespace app.Views
 		public Md5Tp1Page ()
 		{
 			InitializeComponent ();
-		}
+            Title = "tp: formulaire et images";
+        }
 	}
 }
