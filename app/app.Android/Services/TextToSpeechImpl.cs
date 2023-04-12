@@ -33,7 +33,7 @@ namespace app.Droid.Services
             toSpeak = text;
 
             if (speaker == null)
-                speaker = new TextToSpeech(Forms.Context as Activity, this);
+                speaker = new TextToSpeech(Android.App.Application.Context as Activity, this);
             else
                 speaker.Speak(toSpeak, QueueMode.Flush, null, null);
         }
