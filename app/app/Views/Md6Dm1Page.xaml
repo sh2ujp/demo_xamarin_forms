@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="app.Views.Md6Dm1Page">
+
+    <!--module 6 demo 1 -->
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Label Text="Connexion"
+                   TextColor="LightGray"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center" />
+
+            <Label Text="Pour de connecter à l'application, vous de vez vous inscrire et vous identifier avec... bla... blaaaaa... Le but étant que ce texte soit suffisement long pour dépasser la taille de l'écran et pouvoir tester la stratégie de saut de ligne."
+                   TextColor="Gray"
+                   LineBreakMode="WordWrap"
+                   HorizontalTextAlignment="Center" />
+
+            <Entry x:Name="email"
+                   Placeholder="Votre email"
+                   PlaceholderColor="Bisque"
+                   HorizontalOptions="FillAndExpand"
+                   Keyboard="Email" />
+
+            <Entry x:Name="password"
+                   Placeholder="Votre mot de passe"
+                   PlaceholderColor="Bisque"
+                   HorizontalOptions="FillAndExpand"
+                   IsPassword="True" />
+
+            <Entry x:Name="codePostal"
+                   Placeholder="Votre code postal"
+                   PlaceholderColor="Bisque"
+                   HorizontalOptions="FillAndExpand"
+                   MaxLength="5"
+                   Keyboard="Numeric" />
+
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Date de naissance"
+                       TextColor="LightGray"
+                       VerticalOptions="CenterAndExpand" />
+                <DatePicker x:Name="dateNaissance" />
+            </StackLayout>
+
+
+            <StackLayout Orientation="Horizontal">
+                <Switch x:Name="seSouvenir" />
+                <Label Text="Se souvenir de moi"
+                       TextColor="LightGray"
+                       VerticalOptions="CenterAndExpand" />
+            </StackLayout>
+            
+            
+            <!--affichage des messages d'erreur-->
+            <Label x:Name="errorMessage"
+                   IsVisible="False"
+                   TextColor="Red"
+                   HorizontalOptions="FillAndExpand" />
+
+
+            <Button Text="Se connecter"
+                    Clicked="Seconnecter_Clicked"
+                    HorizontalOptions="FillAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
