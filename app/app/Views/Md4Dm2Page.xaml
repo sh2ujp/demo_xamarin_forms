@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="app.Views.Md4Dm2Page">
+    <ContentPage.Content>
+        <Grid ColumnSpacing="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <BoxView BackgroundColor="CadetBlue" Grid.Row="0" Grid.Column="0"/>
+            <BoxView BackgroundColor="#8a2be2" Grid.Row="0" Grid.Column="1"/>
+            <BoxView BackgroundColor="#8a2be2" Grid.Row="1" Grid.Column="0"/>
+            <BoxView BackgroundColor="CadetBlue" Grid.Row="1" Grid.Column="1"/>
+            <BoxView BackgroundColor="Chartreuse" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

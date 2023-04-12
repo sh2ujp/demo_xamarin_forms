@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="app.Views.Md4Dm1Page">
+
+    <!--module 4 demo 1 -->
+    <StackLayout Orientation="Vertical">
+        <Label Text="DEMO:md4d1!" FontSize="Title"/>
+        <StackLayout 
+            Orientation="Horizontal" 
+            BackgroundColor="AntiqueWhite"
+            VerticalOptions="FillAndExpand"
+            >
+            <BoxView 
+                BackgroundColor="Red"
+                HorizontalOptions="StartAndExpand"
+                VerticalOptions="StartAndExpand"
+            ></BoxView>
+            <BoxView 
+                BackgroundColor="Green"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+            ></BoxView>
+            <BoxView 
+                BackgroundColor="Blue"
+                HorizontalOptions="EndAndExpand" 
+                VerticalOptions="EndAndExpand"
+            ></BoxView>
+        </StackLayout>
+
+        <StackLayout
+            Orientation="Vertical"
+            VerticalOptions="FillAndExpand"
+        >
+            <BoxView 
+                Color="Beige"
+                VerticalOptions="FillAndExpand"
+            />
+            <BoxView 
+                Color="BurlyWood"
+                VerticalOptions="FillAndExpand"
+            />
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

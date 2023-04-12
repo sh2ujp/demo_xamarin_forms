@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="app.Views.Md4Tp1Page">
+
+    <StackLayout Orientation="Vertical">
+        <Label Text="TP:md4tp1!" FontSize="Title"/>
+
+        <!--Top Menu-->
+        <StackLayout 
+            Orientation="Horizontal"
+            BackgroundColor="#58b0f0"
+            Padding="25,10,0,0"
+        >
+            <Label 
+                Text="Nouveau"
+                TextColor="White"
+                HorizontalOptions="StartAndExpand"
+                VerticalOptions="CenterAndExpand"
+            />
+            <Label 
+                Text="Accueil"
+                TextColor="White"
+                FontSize="Title"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+            />
+            <Label 
+                Text="Rechercher"
+                TextColor="White"
+                HorizontalOptions="EndAndExpand"
+                VerticalOptions="CenterAndExpand"
+            />
+        </StackLayout>
+
+        
+        <!--Main Content-->
+        <ScrollView>
+            <StackLayout Orientation="Vertical">
+
+            <!--Tweet Card-->
+            <StackLayout
+                Orientation="Vertical"
+            >
+                <!--Tweet Content-->
+                <StackLayout 
+                    Orientation="Horizontal"
+                    Padding="0,0,12,0"
+                >
+                    <BoxView 
+                        Color="AliceBlue"
+                        WidthRequest="75"
+                    />
+
+                    <StackLayout 
+                        Orientation="Vertical"
+                        >
+
+                        <StackLayout
+                            Orientation="Horizontal"
+                            Padding="0,15,0,0"
+                        >
+                            <Label
+                                Text="Cedric"
+                                HorizontalOptions="Start"
+                            />
+                            <Label
+                                Text="@cedricmillauriaux"
+                                HorizontalOptions="StartAndExpand"
+                            />
+                            <Label
+                                Text="50s"
+                                TextColor="LightGray"
+                                HorizontalOptions="EndAndExpand"
+                            />
+                        </StackLayout>
+
+                        <Label
+                            HorizontalOptions="CenterAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                        >Lore oiiez feieoz jfoi eofj oejzfi heihvhslvjlsjfij eljlisjljrl gliejlej flijslifj lqjliejf lijmoK EMOKCMOEKMIQ JM QJSKRGMJ.</Label>
+                    </StackLayout>
+                </StackLayout>
+
+                <!--Action Buttons-->
+                <StackLayout Orientation="Horizontal">
+                    <Label HorizontalOptions="CenterAndExpand">Répondre</Label>
+                    <Label HorizontalOptions="CenterAndExpand">Retweet</Label>
+                    <Label HorizontalOptions="CenterAndExpand">Favoris</Label>
+                </StackLayout>
+                
+                <!--Separation-->
+                <Label HeightRequest="1" BackgroundColor="LightGray"/>
+
+            </StackLayout>
+
+
+            </StackLayout>
+        </ScrollView>
+
+        
+        <!--Footer Menu-->
+        <StackLayout 
+            Orientation="Horizontal" 
+            HeightRequest="75"
+            VerticalOptions="EndAndExpand"
+        >
+            <Label
+                Text="Fil"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+            />
+            <Label
+                Text="Notifications"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+            />
+            <Label
+                Text="Messages"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+            />
+            <Label
+                Text="Moi"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+            />
+        </StackLayout>
+            
+    </StackLayout>
+    
+</ContentPage>
