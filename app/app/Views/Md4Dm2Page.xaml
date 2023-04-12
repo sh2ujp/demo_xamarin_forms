@@ -2,6 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="app.Views.Md4Dm2Page">
+
+    <!--module 4 demo 2 -->
     <ContentPage.Content>
         <Grid ColumnSpacing="5">
             <Grid.RowDefinitions>

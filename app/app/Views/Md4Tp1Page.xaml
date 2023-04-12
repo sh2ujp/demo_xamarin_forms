@@ -3,8 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="app.Views.Md4Tp1Page">
 
+    <!--module 4 tp 1 -->
     <StackLayout Orientation="Vertical">
-        <Label Text="TP:md4tp1!" FontSize="Title"/>
 
         <!--Top Menu-->
         <StackLayout 
@@ -126,7 +126,6 @@
                 VerticalOptions="CenterAndExpand"
             />
         </StackLayout>
-            
     </StackLayout>
     
 </ContentPage>
