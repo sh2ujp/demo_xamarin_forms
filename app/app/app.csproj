@@ -33,10 +33,19 @@
     <EmbeddedResource Update="Views\Md6Dm1Page.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\Md6Tp1Page.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\Md6Tp1Page.xaml.cs">
+      <DependentUpon>Md6Tp1Page.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>
